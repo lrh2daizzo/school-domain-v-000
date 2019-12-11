@@ -16,6 +16,6 @@ class School
   end
 
   def sort
-    roster.map { |grade, students| roster[grade] = students.sort  }
+    roster.each { |grade, students| abc_roster[grade] = students.sort  }
   end
 end
