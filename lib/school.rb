@@ -16,6 +16,8 @@ class School
   end
 
   def sort
+    abc_roster = {}
     roster.each { |grade, students| abc_roster[grade] = students.sort  }
+    abc_roster
   end
 end
